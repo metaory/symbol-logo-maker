@@ -161,7 +161,8 @@ export const reset = () => {
 
 export const loadState = (newState: Partial<State>) => {
   Object.entries(newState).forEach(([key, value]) => {
-    store[key as keyof State] = { ...store[key as keyof State], ...value }
+    const k = key as keyof State
+    Object.assign(store[k], value)
   })
 }
 

@@ -1,6 +1,5 @@
 import { IconDownload, IconCopy, IconPhoto } from '@tabler/icons-react'
 import { Button } from '@/components/ui/button'
-import { update, useStore } from '@/state'
 import { downloadSvg, downloadPng, copySvg } from '@/lib/export'
 import { PresetList } from './PresetList'
 import { PreviewControls } from './PreviewControls'
@@ -8,8 +7,6 @@ import { PreviewControls } from './PreviewControls'
 const pngSizes = [128, 256, 512, 1024] as const
 
 export function ExportPanel() {
-  const size = useStore(s => s.background.size)
-  
   return (
     <aside className="panel-scroll grid content-start gap-4 overflow-y-auto border-l border-border bg-card p-3">
       <PreviewControls />
