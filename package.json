@@ -1,8 +1,12 @@
 {
   "name": "symbol-logo-maker",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "homepage": "https://metaory.github.io/symbol-logo-maker/",
+  "bugs": "https://github.com/metaory/symbol-logo-maker/issues",
+  "repository": "git+https://github.com/metaory/symbol-logo-maker.git",
+  "author": "metaory <metaory@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -16,6 +20,7 @@
     "@tailwindcss/vite": "^4.1.17",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "iconify-picker": "^0.7.2",
     "radix-ui": "^1.4.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
